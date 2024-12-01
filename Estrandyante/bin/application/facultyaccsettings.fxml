@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.accsettingsController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1080.0">
+         <children>
+            <Pane prefHeight="52.0" prefWidth="1080.0" styleClass="pne" stylesheets="@application.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="469.0" layoutY="15.0" text="User Accounts" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnRefresh" layoutX="924.0" layoutY="677.0" mnemonicParsing="false" onAction="#handleRefresh" styleClass="btnn" stylesheets="@application.css" text="Refresh" wrapText="true" />
+            <Button fx:id="btnback" layoutX="1009.0" layoutY="677.0" mnemonicParsing="false" onAction="#handlebackf" styleClass="btnn" stylesheets="@application.css" text="Back" wrapText="true" />
+            <TableView fx:id="userTable" layoutX="13.0" layoutY="69.0" prefHeight="608.0" prefWidth="1054.0" stylesheets="@application.css">
+               <columns>
+                  <TableColumn fx:id="colUserID" prefWidth="140.0" text="User No." />
+                  <TableColumn fx:id="colEmail" prefWidth="265.0" text="Email" />
+                  <TableColumn fx:id="colUsername" prefWidth="356.0" text="Username" />
+                  <TableColumn fx:id="colPassword" prefWidth="179.0" text="Password" />
+                  <TableColumn fx:id="colRole" prefWidth="113.0" text="Role" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

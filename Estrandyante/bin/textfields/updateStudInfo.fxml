@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textfields.studinfoUpdate">
+   <children>
+      <AnchorPane prefHeight="395.0" prefWidth="496.0">
+         <children>
+            <Pane layoutX="12.0" layoutY="11.0" prefHeight="54.0" prefWidth="472.0" styleClass="pne" stylesheets="@../application/application.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="63.0" layoutY="13.0" prefHeight="25.0" prefWidth="363.0" text="UPDATE STUDENT INFORMATION" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TextField fx:id="txtEmail" layoutX="12.0" layoutY="258.0" prefHeight="25.0" prefWidth="337.0" promptText="Enter Email" />
+            <TextField fx:id="txtLname" layoutX="12.0" layoutY="131.0" prefHeight="25.0" prefWidth="231.0" promptText="Enter Last Name" />
+            <DatePicker fx:id="birthdatePicker" layoutX="363.0" layoutY="258.0" prefHeight="25.0" prefWidth="121.0" />
+            <TextField fx:id="txtFname" layoutX="251.0" layoutY="131.0" prefHeight="25.0" prefWidth="231.0" promptText="Enter First Name" />
+            <TextField fx:id="txtMname" layoutX="14.0" layoutY="194.0" prefHeight="25.0" prefWidth="231.0" promptText="Enter Middle Name" />
+            <TextField fx:id="txtEname" layoutX="251.0" layoutY="194.0" prefHeight="25.0" prefWidth="231.0" promptText="Enter Extension Name" />
+            <Button layoutX="80.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="25.0" prefWidth="337.0" styleClass="btn" stylesheets="@../application/application.css" text="Save" />
+            <Line endX="128.0" layoutX="116.0" layoutY="156.0" startX="-100.0" />
+            <Line endX="128.0" layoutX="353.0" layoutY="156.0" startX="-100.0" />
+            <Line endX="128.0" layoutX="114.0" layoutY="219.0" startX="-100.0" />
+            <Line endX="128.0" layoutX="353.0" layoutY="219.0" startX="-100.0" />
+            <Line endX="234.0" layoutX="116.0" layoutY="283.0" startX="-100.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

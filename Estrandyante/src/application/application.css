@@ -1,0 +1,46 @@
+.pne {
+    -fx-background-color: #2AD4A4;
+    }
+
+.pnee {
+	-fx-background-color: #3feb90;
+}
+
+.pneee {
+	-fx-background-color: white;
+}
+.pneeee {
+	-fx-background-color: white;
+	     -fx-background-radius: 15px; 
+    -fx-border-radius: 15px;
+    -fx-padding: 10px 20px;
+}
+.btn {
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-color: #2AD4A4;
+     -fx-background-radius: 15px; 
+    -fx-border-radius: 15px;
+    -fx-padding: 10px 20px;
+    -fx-text-fill: white;
+    }
+.btnn {
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: White;
+    -fx-background-color: #2AD4A4;
+    }
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 5px 0px 5px 0px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #2AD4A4;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 10px 15px;
+}

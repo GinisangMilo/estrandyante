@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textfields.viewstudinfo">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1080.0">
+         <children>
+            <Label fx:id="lblFName" layoutX="681.0" layoutY="210.0" prefHeight="30.0" prefWidth="296.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMName" layoutX="92.0" layoutY="324.0" prefHeight="30.0" prefWidth="296.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btntakequestion" alignment="CENTER" layoutX="266.0" layoutY="634.0" mnemonicParsing="false" onAction="#handleTakeQuestionnaire" prefHeight="36.0" prefWidth="561.0" styleClass="btn" stylesheets="@../application/application.css" text="Take Assessment" />
+            <Pane prefHeight="52.0" prefWidth="1090.0" styleClass="pne" stylesheets="@../application/application.css">
+               <children>
+                  <Label layoutX="450.0" layoutY="15.0" prefHeight="23.0" prefWidth="203.0" text="Student Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnClose" layoutX="990.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleback" styleClass="btn" stylesheets="@../application/application.css" text="Logout" />
+               </children>
+            </Pane>
+            <Line endX="989.0" layoutX="101.0" layoutY="143.0" startX="-100.0" />
+            <Label layoutX="96.0" layoutY="178.0" prefHeight="27.0" prefWidth="179.0" text="Last Name">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblLName" layoutX="92.0" layoutY="205.0" prefHeight="30.0" prefWidth="296.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEName" layoutX="681.0" layoutY="324.0" prefHeight="30.0" prefWidth="296.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmail" layoutX="92.0" layoutY="462.0" prefHeight="30.0" prefWidth="576.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBirthdate" layoutX="681.0" layoutY="462.0" prefHeight="30.0" prefWidth="296.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRecommendation" alignment="CENTER" layoutX="398.0" layoutY="549.0" prefHeight="30.0" prefWidth="296.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="681.0" layoutY="178.0" prefHeight="27.0" prefWidth="179.0" text="First Name">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="297.0" prefHeight="27.0" prefWidth="179.0" text="Middle Name">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="681.0" layoutY="297.0" prefHeight="27.0" prefWidth="179.0" text="Extension Name">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="435.0" prefHeight="27.0" prefWidth="179.0" text="Email">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="681.0" layoutY="435.0" prefHeight="27.0" prefWidth="179.0" text="BirthDate">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="447.0" layoutY="522.0" prefHeight="27.0" prefWidth="179.0" text="Recommended Strand">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

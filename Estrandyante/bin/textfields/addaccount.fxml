@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textfields.accsettings">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="300.0" prefWidth="573.0" styleClass="pne" stylesheets="@../application/application.css">
+               <children>
+                  <Pane layoutX="14.0" layoutY="50.0" prefHeight="238.0" prefWidth="542.0" styleClass="pneee" stylesheets="@../application/application.css">
+                     <children>
+                        <TextField fx:id="txtUsername" layoutX="17.0" layoutY="50.0" prefHeight="27.0" prefWidth="225.0" promptText="Enter Username" />
+                        <TextField fx:id="txtpassword" layoutX="282.0" layoutY="50.0" prefHeight="27.0" prefWidth="243.0" promptText="Enter Password" />
+                        <Line endX="262.0" layoutX="271.0" startX="-263.0" />
+                        <Line endX="113.0" layoutX="118.0" layoutY="77.0" startX="-100.0" />
+                        <Line endX="113.0" layoutX="383.0" layoutY="77.0" startX="-100.0" />
+                        <ComboBox fx:id="comboRole" layoutX="18.0" layoutY="153.0" prefHeight="25.0" prefWidth="214.0" promptText="Choose Role" />
+                        <TextField fx:id="txtEmail" layoutX="277.0" layoutY="152.0" prefHeight="27.0" prefWidth="225.0" promptText="Enter Email" />
+                        <Line endX="113.0" layoutX="378.0" layoutY="179.0" startX="-100.0" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="194.0" layoutY="14.0" text="CREATE ACCOUNT" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnAddUser" layoutX="155.0" layoutY="342.0" mnemonicParsing="false" onAction="#addUser" prefHeight="36.0" prefWidth="291.0" styleClass="btn" stylesheets="@../application/application.css" text="Save" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

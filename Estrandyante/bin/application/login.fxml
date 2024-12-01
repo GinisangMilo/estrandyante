@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <AnchorPane prefHeight="431.0" prefWidth="610.0">
+         <children>
+            <Button layoutX="360.0" layoutY="250.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="184.0" styleClass="btn" stylesheets="@application.css" text="login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="5.0" />
+               </font>
+            </Button>
+            <TextField fx:id="username" layoutX="340.0" layoutY="159.0" prefHeight="25.0" prefWidth="230.0" promptText="Username" stylesheets="@application.css" />
+            <Pane prefHeight="431.0" prefWidth="287.0" styleClass="pne" stylesheets="@application.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="34.0" layoutY="47.0" prefHeight="39.0" prefWidth="220.0" text="ESTRANDYANTE:" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="24.0" layoutY="86.0" prefHeight="39.0" prefWidth="239.0" text="K-12 PROGRAM STUDENT" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="110.0" prefHeight="39.0" prefWidth="239.0" text="PROFILING SYSTEM" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="6.0" layoutY="181.0" prefHeight="39.0" prefWidth="280.0" text="&quot;EMPOWERING STUDENT SUCCESS" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="211.0" prefHeight="39.0" prefWidth="280.0" text="THROUGH DATA-DRIVEN INSIGHTS&quot;" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="98.0" fitWidth="99.0" layoutX="406.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/Logo-removebg-preview%20(2).png" />
+               </image>
+            </ImageView>
+            <Line endX="135.0" layoutX="435.0" layoutY="186.0" startX="-100.0" strokeWidth="0.5" />
+            <Line endX="135.0" layoutX="434.0" layoutY="230.0" startX="-100.0" strokeWidth="0.5" />
+            <PasswordField fx:id="password" layoutX="337.0" layoutY="203.0" prefHeight="25.0" prefWidth="230.0" promptText="Password" styleClass="text-field" stylesheets="@application.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
